@@ -1,0 +1,12 @@
+# DESCRIPTION: Verilator output: Timestamp data for --skip-identical.  Delete at will.
+C "-Wall -cc src/blinky.v --Mdir ./build/blinky -y src/ --exe ../../test/blinky.cpp -CFLAGS -std=c++11 -o test"
+T      4624 44880484  1514592509 "./build/blinky/Vblinky.cpp"
+T      2730 44880483  1514592509 "./build/blinky/Vblinky.h"
+T      2019 44880486  1514592509 "./build/blinky/Vblinky.mk"
+T       579 44880482  1514592509 "./build/blinky/Vblinky__Syms.cpp"
+T       963 44880481  1514592509 "./build/blinky/Vblinky__Syms.h"
+T       329 44880487  1514592509 "./build/blinky/Vblinky__ver.d"
+T         0        0  1514592509 "./build/blinky/Vblinky__verFiles.dat"
+T      1088 44880485  1514592509 "./build/blinky/Vblinky_classes.mk"
+S   4056884 44837240  1484500545 "/usr/local/Cellar/verilator/3.900/bin/verilator_bin"
+S       222 44778057  1514592455 "src/blinky.v"
