@@ -31,7 +31,7 @@ Name | Description
 
 ### My setup
 
-Each project will have a directory under the root of this repo. It will also have a link in the above list with some status about it's project. 
+Each project will have a directory under the root of this repo. It will also have a link in the above list with some status about it's project.
 
 Each project as a Makefile. If you don't know what a Makefile is, you don't really need to worry about the details. Just know it help make using the project a lot easier.
 
@@ -49,3 +49,8 @@ This will run all the unit tests that exist for the project. I try my best to ve
 > make clean
 ```
 This will clean things up and remove the whole build folder
+
+```
+> make simulate
+```
+Run the simulator for the project
