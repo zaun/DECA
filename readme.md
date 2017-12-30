@@ -27,7 +27,7 @@ I use [Atom](https://atom.io/) as my editor. It is more than enough for my needs
 
 Code | Tests | DECA | Name | Description
 ---- | ----- | ---- | ---- | -----------
-:white_square_button: | :white_square_button: | :white_medium_square: | [Blinky](tree/master/blinky) | It's my first project, everyone should blink at least once
+:white_square_button: | :white_square_button: | :white_medium_square: | [Blinky](../tree/master/blinky) | It's my first project, everyone should blink at least once
 
 * Code -> Verilog code in progress / done
 * Test -> Code has unit tests / Simulation
