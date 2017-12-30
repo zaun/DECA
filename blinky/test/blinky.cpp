@@ -20,8 +20,8 @@ TestCase testCases[] {
   { "Should turn on at 2^25 ticks",              1, "10000000000000000000000000", 33554432 },
   { "Should stay on after 2^25 ticks",           1, "10000000000000000001100100", 33554432 + 100 },
   { "Should stay on before 2^50 ticks",          1, "11111111111111111111111111", 33554432 + 33554432 - 1 },
-	{ "Should turn off at 2^50 ticks",             0, "00000000000000000000000000", 33554432 + 33554432 },
-	{ "Should stay off after 2^50 ticks",          0, "00000000000000000001100100", 33554432 + 33554432  + 100}
+  { "Should turn off at 2^50 ticks",             0, "00000000000000000000000000", 33554432 + 33554432 },
+  { "Should stay off after 2^50 ticks",          0, "00000000000000000001100100", 33554432 + 33554432  + 100}
 };
 
 // The test runner
@@ -48,21 +48,21 @@ int main (int argc, char **argv, char **env) {
       blinky->eval();
     }
 
-		// Format the register value
+    // Format the register value
     char binary [27];
     itoa(blinky->blinky__DOT__counter, binary, 2);
 
     char buffer [27];
     leftPadZero(buffer, binary, 27);
 
-		// Verify the test results
+    // Verify the test results
     if (blinky->o_led != testCase->o_led_expected ||
 		    strcmp(buffer, testCase->r_counter_expected) != 0) {
       failTests ++;
       printf("(F) %s\n", testCase->name);
-			printf("    o_led %d expected to be %d\n", blinky->o_led, testCase->o_led_expected);
-			printf("    r_counter %s expected\n", buffer);
-			printf("        to be %s\n", testCase->r_counter_expected);
+      printf("    o_led %d expected to be %d\n", blinky->o_led, testCase->o_led_expected);
+      printf("    r_counter %s expected\n", buffer);
+      printf("        to be %s\n", testCase->r_counter_expected);
     } else {
       printf("(P) %s\n", testCase->name);
     }
@@ -71,7 +71,7 @@ int main (int argc, char **argv, char **env) {
     delete blinky;
   }
 
-	// Print a summary
+  // Print a summary
   printf("\n%d of %d failed tests\n\n", failTests, numTests);
 
   if (failTests > 0) {
