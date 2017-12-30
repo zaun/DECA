@@ -31,8 +31,8 @@ int main (int argc, char **argv, char **env) {
   int numTests = sizeof(testCases)/sizeof(TestCase);
   int failTests = 0;
 
-  printf("\n\nBlink 1 unit tests\n");
-  printf("------------------\n\n");
+  printf("\n\nBlinky unit tests\n");
+  printf("-----------------\n\n");
 
   for (int k = 0; k < numTests; k++) {
     // Init the module
