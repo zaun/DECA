@@ -25,13 +25,13 @@ I use [Atom](https://atom.io/) as my editor. It is more than enough for my needs
 
 ### Projects
 
-Finished | Name | Description
--------- | ---- | -----------
-:white_medium_square: | [Blinky](https://github.com/zaun/DECA/tree/master/blinky) | It's my first project, everyone should blink at least once
+Name | Description
+---- | -----------
+[Blinky](https://github.com/zaun/DECA/tree/master/blinky) | It's my first project, everyone should blink at least once
 
 ### My setup
 
-Each project will have a directory under the root of this repo. It will also have a link in the above list with some status about it's project. If something is marked finished it just means I'm done with it, and it is usable. It still may be updated in the future and it most likely still has bugs. If it's not marked finished then please don't expect anything to work.
+Each project will have a directory under the root of this repo. It will also have a link in the above list with some status about it's project. 
 
 Each project as a Makefile. If you don't know what a Makefile is, you don't really need to worry about the details. Just know it help make using the project a lot easier.
 
