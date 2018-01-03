@@ -17,7 +17,7 @@ build_%:
 		-o run
 	$(MAKE) -C build/$(lastword $(subst _, ,$@))/test -f V$(lastword $(subst _, ,$@)).mk
 
-	mkdir -p ./build/$(lastword $(subst _, ,$@))/simulators/
+	mkdir -p ./build/$(lastword $(subst _, ,$@))/simulator/
 	verilator -Wall -cc src/$($(lastword $(subst _, ,$@))_files) \
 	  --Mdir ./build/$(lastword $(subst _, ,$@))/simulator \
 		-y src/ --exe ../../simulator/$(lastword $(subst _, ,$@)).cpp \

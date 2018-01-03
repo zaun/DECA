@@ -44,6 +44,7 @@ module fifo #(
       addr_read <= addr_read + 1'b1;
     end else if (i_read && empty && !i_reset) begin
       read_error <= 1;
+      data <= 0;
     end else begin
       read_error <= 0;
     end
